@@ -1,5 +1,5 @@
 import { deletePoint } from "../firebase/locations";
-import { MarkParam, PointParams } from "../models/paramTypes";
+import { PointParams } from "../models/paramTypes";
 
 type NavProps = {
   data: PointParams[];

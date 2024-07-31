@@ -1,8 +1,3 @@
-export type MarkParam = {
-  index: number;
-  lng: number;
-  lat: number;
-};
 export type PointParams = {
   id: string;
   location: {
