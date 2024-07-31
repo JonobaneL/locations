@@ -53,7 +53,7 @@ const LocationsMap = ({ points, setPoints }: MapProps) => {
     }
   };
 
-  const onMoveHandler = (e: ViewStateChangeEvent) => {
+  const onMoveHandler = () => {
     const map = mapRef?.current?.getMap();
     const features = map?.queryRenderedFeatures() || [];
     if (features.length > 0) {
@@ -74,7 +74,7 @@ const LocationsMap = ({ points, setPoints }: MapProps) => {
         }}
         onClick={clickHandler}
         style={{ width: "100%", height: "40rem" }}
-        onMove={onMoveHandler}
+        onMove={() => onMoveHandler()}
         mapStyle="mapbox://styles/jonobane/clz9qbwvp004201qw3pdr2q9n"
       >
         {visibleMarks &&

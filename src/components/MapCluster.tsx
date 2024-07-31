@@ -1,5 +1,5 @@
 import { Layer, Source } from "react-map-gl";
-import { MarkParam, PointParams } from "../models/paramTypes";
+import { PointParams } from "../models/paramTypes";
 import type { FeatureCollection } from "geojson";
 import { clusterCountLayer, clusterLayer } from "../data/layersConfigs";
 type ClusterProps = {
